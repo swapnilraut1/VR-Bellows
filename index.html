@@ -1555,13 +1555,16 @@
                             <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                                 Expansion joints are flexible connectors designed to absorb thermal expansion, vibration, and movement in furnace lines, ducting systems, and industrial pipelines. Made from high-temperature-resistant fabrics or metal, they ensure system integrity, reduce stress on equipment, and improve operational safety in high-heat and high-pressure environments.
                             </p>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Specially engineered bellows for combined temperature, humidity, and vibration test systems provide flexible sealing and protection under extreme test conditions. They ensure isolation of sensitive components while withstanding thermal fluctuations, moisture, and mechanical stress, making them ideal for environmental simulation equipment.
+                            </p>
                             <div class="bg-red-100 p-4 rounded-lg border border-red-200">
                                 <h4 class="font-semibold text-red-800 mb-2">Specifications:</h4>
                                 <ul class="text-red-700 space-y-1">
                                     <li>• Length: As per Requirement</li>
                                     <li>• Color: Red, Silver-Grey Black</li>
                                     <li>• Material: Silicone Coated Glass Fabric</li>
-                                    <li>• Temperature: Up to 500°C</li>
+                                    <li>• Temperature: -75°C to 500°C</li>
                                 </ul>
                             </div>
                         </div>
@@ -1575,7 +1578,7 @@
                 </div>
 
                 <!-- Temperature Humidity Vibration Combined Test System- Bellow -->
-                <div class="py-8 border-gray-200 fade-in">
+                <!-- <div class="py-8 border-gray-200 fade-in">
                     <div class="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-xl border-l-4 border-pink-500 mb-6">
                         <h3 class="text-3xl font-semibold text-gray-800 mb-3 flex items-center">
                             <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-3">
@@ -1609,7 +1612,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Tool Trolley -->
                 <div class="py-8 border-gray-200 fade-in">
@@ -1626,6 +1629,53 @@
                         <p class="text-indigo-600 font-medium">Organized Tool Management</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        <div class="flex justify-center items-start">
+                            <!-- Tool Trolley Carousel -->
+                            <div class="relative w-full max-w-sm">
+                                <div class="absolute -top-2 -right-2 bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">Storage</div>
+                                <div id="toolTrolleyCarousel" class="relative overflow-hidden rounded-xl shadow-2xl">
+                                    <div id="toolTrolleyContainer" class="flex transition-transform duration-500 ease-in-out" style="width: 400%;">
+                                        <div class="w-1/4 flex-shrink-0">
+                                            <img src="img/4.1.png" alt="Tool Trolley - Front view showing tool holder storage by V R Bellows" class="w-full">
+                                        </div>
+                                        <div class="w-1/4 flex-shrink-0">
+                                            <img src="img/4.2.png" alt="Tool Trolley - Side view with mobility features by V R Bellows" class="w-full">
+                                        </div>
+                                        <div class="w-1/4 flex-shrink-0">
+                                            <img src="img/4.3.png" alt="Tool Trolley - Top view showing organized tool storage by V R Bellows" class="w-full">
+                                        </div>
+                                        <div class="w-1/4 flex-shrink-0">
+                                            <img src="img/4.4.png" alt="Tool Trolley - Detailed view of tool holder compartments by V R Bellows" class="w-full">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Navigation Arrows -->
+                                    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" onclick="prevSlide('toolTrolley')">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" onclick="nextSlide('toolTrolley')">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                    
+                                    <!-- Dots Indicator -->
+                                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300" onclick="goToSlide('toolTrolley', 0)"></button>
+                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300" onclick="goToSlide('toolTrolley', 1)"></button>
+                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300" onclick="goToSlide('toolTrolley', 2)"></button>
+                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300" onclick="goToSlide('toolTrolley', 3)"></button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Image Counter -->
+                                <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                                    <span id="toolTrolleyCounter">1</span> / 4
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                                 Our tool trolleys are specially designed for safe and organized storage of VMC tool holders. Built with heavy-duty frames and smooth-rolling wheels, they offer easy mobility, quick access, and enhanced workshop efficiency. Available in various capacities, our trolleys ensure secure handling of BT, HSK, or ISO tooling systems.
@@ -1638,53 +1688,6 @@
                                     <li>• Multiple capacities</li>
                                     <li>• BT/HSK/ISO compatible</li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-start">
-                            <!-- Tool Trolley Carousel -->
-                            <div class="relative w-full max-w-sm">
-                                <div class="absolute -top-2 -right-2 bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">Storage</div>
-                                <div id="toolTrolleyCarousel" class="relative overflow-hidden rounded-xl shadow-2xl">
-                                    <div class="carousel-container flex transition-transform duration-500 ease-in-out">
-                                        <div class="carousel-slide w-full flex-shrink-0">
-                                            <img src="img/4.1.png" alt="Tool Trolley - Front view showing tool holder storage by V R Bellows" class="product-image">
-                                        </div>
-                                        <div class="carousel-slide w-full flex-shrink-0">
-                                            <img src="img/45.2.png" alt="Tool Trolley - Side view with mobility features by V R Bellows" class="product-image">
-                                        </div>
-                                        <div class="carousel-slide w-full flex-shrink-0">
-                                            <img src="img/4.3.png" alt="Tool Trolley - Top view showing organized tool storage by V R Bellows" class="product-image">
-                                        </div>
-                                        <div class="carousel-slide w-full flex-shrink-0">
-                                            <img src="img/4.4.png" alt="Tool Trolley - Detailed view of tool holder compartments by V R Bellows" class="product-image">
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Navigation Arrows -->
-                                    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" onclick="changeSlide('toolTrolleyCarousel', -1)">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                                        </svg>
-                                    </button>
-                                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" onclick="changeSlide('toolTrolleyCarousel', 1)">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </button>
-                                    
-                                    <!-- Dots Indicator -->
-                                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300 carousel-dot active" onclick="goToSlide('toolTrolleyCarousel', 0)"></button>
-                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300 carousel-dot" onclick="goToSlide('toolTrolleyCarousel', 1)"></button>
-                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300 carousel-dot" onclick="goToSlide('toolTrolleyCarousel', 2)"></button>
-                                        <button class="w-3 h-3 bg-white bg-opacity-60 hover:bg-opacity-100 rounded-full transition-all duration-300 carousel-dot" onclick="goToSlide('toolTrolleyCarousel', 3)"></button>
-                                    </div>
-                                </div>
-                                
-                                <!-- Image Counter -->
-                                <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
-                                    <span id="toolTrolleyCounter">1</span> / 4
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1719,13 +1722,7 @@
                         <p class="text-yellow-600 font-medium">Custom Sheet Metal Solutions</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                        <div class="flex justify-center items-start order-2 md:order-1">
-                            <div class="relative">
-                                <img src="img/5.2.jpg" alt="Telescopic Cover - Custom sheet metal covers for CNC and industrial machines by V R Bellows" class="product-image">
-                                <div class="absolute -top-2 -right-2 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom</div>
-                            </div>
-                        </div>
-                        <div class="order-1 md:order-2">
+                        <div class="order-1 md:order-1">
                             <p class="text-lg text-gray-700 mb-4 leading-relaxed">
                                 We specialize in the design and manufacturing of high-quality telescopic covers for CNC and industrial machines. Our covers are custom-built using precision sheet metal, ensuring smooth operation and maximum protection for guideways and critical components.
                             </p>
@@ -1739,9 +1736,12 @@
                                     <li>• Custom retrofitting solutions for existing machines</li>
                                 </ul>
                             </div>
-                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                                With durable construction, expert craftsmanship, and responsive service, we ensure long-lasting protection and performance for your equipment.
-                            </p>
+                        </div>
+                        <div class="flex justify-center items-start order-2 md:order-2">
+                            <div class="relative">
+                                <img src="img/2.4.jpg" alt="Telescopic Cover - Custom sheet metal covers for CNC and industrial machines by V R Bellows" class="product-image">
+                                <div class="absolute -top-2 -right-2 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Custom</div>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border-l-4 border-indigo-500">
@@ -1773,24 +1773,24 @@
                         <p class="text-purple-600 font-medium">Aluminum Strip Protection</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        <div class="flex justify-center items-start">
+                            <div class="relative">
+                                <img src="img/5.1.jpg" alt="Apparon Covers - Aluminum apron covers for machine protection by V R Bellows" class="product-image">
+                                <div class="absolute -top-2 -right-2 bg-violet-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Aluminum</div>
+                            </div>
+                        </div>
                         <div>
                             <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                                 Aluminum Apron Covers are precision-engineered protective covers designed to shield guideways, ball screws, and machine beds from dust, chips, coolant, and mechanical damage. These covers are made from high-strength aluminum strips that are linked or overlapped to provide flexible, yet rigid surface protection. Their low-profile and robust design make them ideal for horizontal or vertical installations, especially where space is limited, and where high-speed or continuous movement is involved.
                             </p>
-                            <div class="bg-violet-100 p-4 rounded-lg border border-violet-200">
-                                <h4 class="font-semibold text-violet-800 mb-2">Advantages:</h4>
-                                <ul class="text-violet-700 space-y-1">
+                            <div class="bg-indigo-100 p-4 rounded-lg border border-indigo-200">
+                                <h4 class="font-semibold text-indigo-800 mb-2">Advantages:</h4>
+                                <ul class="text-indigo-700 space-y-1">
                                     <li>• High-strength aluminum strips</li>
                                     <li>• Flexible yet rigid protection</li>
                                     <li>• Low-profile design</li>
                                     <li>• High-speed compatible</li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-start">
-                            <div class="relative">
-                                <img src="img/5.3.jpg" alt="Apparon Covers - Aluminum apron covers for machine protection by V R Bellows" class="product-image">
-                                <div class="absolute -top-2 -right-2 bg-violet-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Aluminum</div>
                             </div>
                         </div>
                     </div>
@@ -1810,24 +1810,15 @@
                         <p class="text-red-600 font-medium">Roll-Up Protection Systems</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                        <div class="flex justify-center items-start order-2 md:order-1">
-                            <div class="relative">
-                                <img src="img/5.4.jpg" alt="Rollway Covers - Roll-up protective covers for linear guideways by V R Bellows" class="product-image">
-                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Roll-Up</div>
-                            </div>
-                        </div>
                         <div class="order-1 md:order-2">
                             <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                                 Rollway covers (also known as roll-up covers or roll-type way covers) are compact and flexible protective systems designed to safeguard linear guideways, screws, and machine beds from contaminants like dust, chips, and coolant. These covers roll and unroll smoothly on a spring-loaded or motorized drum, making them ideal for limited-space applications and high-speed movement. Engineered for precision machinery, rollway covers offer efficient space utilization, minimal friction, and long-lasting protection in harsh industrial environments.
                             </p>
-                            <div class="bg-amber-100 p-4 rounded-lg border border-amber-200">
-                                <h4 class="font-semibold text-amber-800 mb-2">Applications:</h4>
-                                <ul class="text-amber-700 space-y-1">
-                                    <li>• CNC Machines (lathe, milling, grinding)</li>
-                                    <li>• Laser and plasma cutting machines</li>
-                                    <li>• Automatic tool changers</li>
-                                    <li>• Industrial automation equipment</li>
-                                </ul>
+                        </div>
+                        <div class="flex justify-center items-start order-2 md:order-1">
+                            <div class="relative">
+                                <img src="img/7.3.jpg" alt="Rollway Covers - Roll-up protective covers for linear guideways by V R Bellows" class="product-image">
+                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Roll-Up</div>
                             </div>
                         </div>
                     </div>
@@ -2041,96 +2032,81 @@
             mobileMenu.classList.toggle('hidden');
         }
 
-        // Carousel functionality
+        // Simple Carousel functionality
         let currentSlide = 0;
-        const slideIntervals = {};
+        const totalSlides = 4;
 
-        function changeSlide(carouselId, direction) {
-            const carousel = document.getElementById(carouselId);
-            const container = carousel.querySelector('.carousel-container');
-            const slides = carousel.querySelectorAll('.carousel-slide');
-            const dots = carousel.querySelectorAll('.carousel-dot');
-            const counter = document.getElementById(carouselId.replace('Carousel', 'Counter'));
-            
-            currentSlide += direction;
-            
-            if (currentSlide >= slides.length) {
-                currentSlide = 0;
-            } else if (currentSlide < 0) {
-                currentSlide = slides.length - 1;
-            }
-            
-            const translateX = -currentSlide * 100;
-            container.style.transform = `translateX(${translateX}%)`;
-            
-            // Update dots
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
-            
-            // Update counter
-            if (counter) {
-                counter.textContent = currentSlide + 1;
-            }
-            
-            // Reset auto-play timer
-            resetAutoPlay(carouselId);
+        function nextSlide(carouselName) {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel(carouselName);
         }
 
-        function goToSlide(carouselId, slideIndex) {
-            const carousel = document.getElementById(carouselId);
-            const container = carousel.querySelector('.carousel-container');
-            const slides = carousel.querySelectorAll('.carousel-slide');
-            const dots = carousel.querySelectorAll('.carousel-dot');
-            const counter = document.getElementById(carouselId.replace('Carousel', 'Counter'));
-            
+        function prevSlide(carouselName) {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel(carouselName);
+        }
+
+        function goToSlide(carouselName, slideIndex) {
             currentSlide = slideIndex;
-            const translateX = -currentSlide * 100;
-            container.style.transform = `translateX(${translateX}%)`;
+            updateCarousel(carouselName);
+        }
+
+        function updateCarousel(carouselName) {
+            const container = document.getElementById(carouselName + 'Container');
+            const counter = document.getElementById(carouselName + 'Counter');
+            const dots = document.querySelectorAll(`#${carouselName}Carousel .absolute.bottom-4 button`);
             
-            // Update dots
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
+            if (container) {
+                const translateX = -currentSlide * 25; // 25% per slide (100% / 4 slides)
+                container.style.transform = `translateX(${translateX}%)`;
+            }
             
-            // Update counter
             if (counter) {
                 counter.textContent = currentSlide + 1;
             }
             
-            // Reset auto-play timer
-            resetAutoPlay(carouselId);
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('bg-opacity-100');
+                    dot.classList.remove('bg-opacity-60');
+                } else {
+                    dot.classList.remove('bg-opacity-100');
+                    dot.classList.add('bg-opacity-60');
+                }
+            });
         }
 
-        function startAutoPlay(carouselId) {
-            slideIntervals[carouselId] = setInterval(() => {
-                changeSlide(carouselId, 1);
-            }, 4000); // Change slide every 4 seconds
+        // Auto-play functionality
+        let autoPlayInterval;
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                nextSlide('toolTrolley');
+            }, 3000);
         }
 
-        function resetAutoPlay(carouselId) {
-            if (slideIntervals[carouselId]) {
-                clearInterval(slideIntervals[carouselId]);
+        function stopAutoPlay() {
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
             }
-            startAutoPlay(carouselId);
         }
 
-        function stopAutoPlay(carouselId) {
-            if (slideIntervals[carouselId]) {
-                clearInterval(slideIntervals[carouselId]);
-            }
-        }
-
-        // Initialize carousels when page loads
+        // Initialize carousel when page loads
         document.addEventListener('DOMContentLoaded', function() {
-            // Start auto-play for tool trolley carousel
-            startAutoPlay('toolTrolleyCarousel');
-            
-            // Pause auto-play on hover
-            const toolTrolleyCarousel = document.getElementById('toolTrolleyCarousel');
-            if (toolTrolleyCarousel) {
-                toolTrolleyCarousel.addEventListener('mouseenter', () => stopAutoPlay('toolTrolleyCarousel'));
-                toolTrolleyCarousel.addEventListener('mouseleave', () => startAutoPlay('toolTrolleyCarousel'));
+            const carousel = document.getElementById('toolTrolleyCarousel');
+            if (carousel) {
+                console.log('Tool Trolley Carousel initialized');
+                
+                // Start auto-play
+                startAutoPlay();
+                
+                // Pause on hover
+                carousel.addEventListener('mouseenter', stopAutoPlay);
+                carousel.addEventListener('mouseleave', startAutoPlay);
+                
+                // Initialize first dot as active
+                updateCarousel('toolTrolley');
             }
         });
 
